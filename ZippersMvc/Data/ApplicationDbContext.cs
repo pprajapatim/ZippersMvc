@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using ZippersMvc.Models;
 
 namespace ZippersMvc.Data
 {
@@ -12,5 +13,6 @@ namespace ZippersMvc.Data
             : base(options)
         {
         }
+        public DbSet<ZippersMvc.Models.Zippers> Zippers { get; set; }
     }
 }
