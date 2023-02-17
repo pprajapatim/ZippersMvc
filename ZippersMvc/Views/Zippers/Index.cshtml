@@ -23,12 +23,16 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.WaterResistance)
-            </th>
+			</th>
+			<a href="c:\users\ppraj\source\repos\zippersmvc\zippersmvc\views\zippers\index.cshtml">c:\users\ppraj\source\repos\zippersmvc\zippersmvc\views\zippers\index.cshtml</a>
             <th>
                 @Html.DisplayNameFor(model => model.Strength)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Flexibility)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rating)
             </th>
             <th></th>
         </tr>
@@ -54,6 +58,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Flexibility)
             </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rating)
+                </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |

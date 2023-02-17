@@ -12,6 +12,7 @@ namespace ZippersMvc.Models
         public string WaterResistance { get; set; }
         public string Strength { get; set; }
         public string Flexibility { get; set; }
-        
+        public string Rating { get; set; }
+
     }
 }

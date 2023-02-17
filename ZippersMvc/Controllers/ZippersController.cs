@@ -54,7 +54,7 @@ namespace ZippersMvc.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Type,Price,Durability,WaterResistance,Strength,Flexibility")] Zippers zippers)
+        public async Task<IActionResult> Create([Bind("Id,Type,Price,Durability,WaterResistance,Strength,Flexibility,Rating")] Zippers zippers)
         {
             if (ModelState.IsValid)
             {
